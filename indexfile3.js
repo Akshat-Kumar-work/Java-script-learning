@@ -55,12 +55,12 @@ console.log(numbers.indexOf(10)); //it give index of element have to search
 
 
 //object inside array
-let courses=[ {no:1 , name:'web dev'} , {no:2, name : 'dsa'} ];
-console.log(courses);
+/*let courses=[ {no:1 , name:'web dev'} , {no:2, name : 'dsa'} ];
+console.log(courses);*/
 
 
 //to acces index no
-console.log(courses[1]);
+/*console.log(courses[1]);
 
 
 //to insert no in array at end
@@ -73,16 +73,16 @@ console.log(courses);
 
 //to insert no at middle
 courses.splice(2,0,{no:1 , name:'web dev'}); //index to insert, element to delte, value
-console.log(courses);
+console.log(courses);*/
 
 
 //to search in array having objects call back functions are use
 /*a call back function is passed into another function as an argument which is involved inside the outer function
 to complete some kind of action*/
-let finding = courses.find(function(naam){
+/*let finding = courses.find(function(naam){
     return naam.name==='dsa';
 });
-console.log(finding);
+console.log(finding);*/
 
 
 let arr = [1,2,3, { name :'akshat'}];
@@ -107,3 +107,86 @@ while(arr.length!=0){
     arr.pop();
 }
 console.log(arr);
+
+//combining and slicing arrays
+let firstarr = [1,2,3];
+let secondarr = [4,5,6];
+
+//to combine array concat function is used
+let combinedarr = firstarr.concat(secondarr);
+console.log(combinedarr);
+
+//to slice an array- remove some part
+let slicedarr = combinedarr.slice(5,6);
+console.log(slicedarr);
+
+/*
+let study=[ {no:1 , name:'web dev'} ];
+let study2=[ {no:2, name : 'dsa'}];
+
+let combing= study.concat(study2);
+console.log(combing)*/
+
+
+//spread operator
+ //it is also used to combine arrays and put an element also
+ let combiningAgain = [...firstarr,...secondarr,'a'];
+ console.log(combiningAgain);
+
+ //iterating an array
+ let arr1 = [10,20,30,40,50];
+
+ //for of loop
+ for(let value of arr1){
+    console.log(value);
+ };
+
+ //for each loop
+arr1.forEach(value => console.log(value));
+
+//joining arrays element
+let mess = [1,2,3,4,5,6];
+console.log(mess);
+let join = mess.join(',');
+console.log(join)
+
+//spliting whole string 
+let message = 'this is mst';
+let parts = message.split(' ');
+console.log(parts);
+
+//sorting arrays
+//sorting function first convert element into string than sort it
+let num = [1,5,68,56,65];
+let sorted = num.sort();
+console.log(sorted);
+num.reverse();
+console.log(sorted);
+
+//filtering arrays
+let numb = [1,2,-1,-4];
+
+//filtering positive values
+/*let filtered = numb.filter(function(value){
+    return value>=0;
+})*/
+
+
+//short hand line for uppper 
+let filtered = numb.filter(value=>value>=0)
+
+console.log(filtered);
+
+//mapping arrays
+let line = [7,8,9,10];
+console.log(line)
+/*let mapped=line.map(function(value){
+    return 'studentNo'+value;
+})*/
+
+//short hand notation
+let mapped=line.map(value=>'studentNo'+value)
+
+console.log(mapped);
+
+
