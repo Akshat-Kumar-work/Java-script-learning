@@ -184,8 +184,6 @@ console.log(line)
     return 'studentNo'+value;
 })*/
 
-//short hand notation
-let mapped=line.map(value=>'studentNo'+value)
 
 console.log(mapped);
 
