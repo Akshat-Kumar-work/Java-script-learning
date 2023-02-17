@@ -100,5 +100,5 @@
 
 //we can write this whole array by reducing
 let total = a.reduce((accumulator,currentvalue)=>accumulator+currentvalue,0 );
-console.log(total);
+console.log(total); 
 
