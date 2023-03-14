@@ -27,7 +27,7 @@ console.log(person['age']);
 console.log(person['firstname']);
 
 //arrays
-let names = ['akshat','himanshi','yoyo',123];
+let names = ['akshat','yoyo',123];
 console.log(names);
 let numbers = [123 , 'one' , 'two' , 'three'];
 console.log(numbers);
@@ -90,3 +90,5 @@ else{
     j++;
  }while(j<8);
 
+
+ 
